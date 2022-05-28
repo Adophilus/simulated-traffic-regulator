@@ -6,12 +6,12 @@ class TrafficLightController ():
         self.no_of_lanes = no_of_lanes
         self.timeout = timeout
 
-    def run (self):
+    def run(self):
         lanes = [
                 [0, 0]
         ] * self.no_of_lanes
-        while (True):
-            for i in range(len(lanes)):
+        while True:
+            for _ in range(len(lanes)):
                 """
                 if [ 0, 1 ] -> [ 1, 1 ]
                 then
@@ -22,7 +22,6 @@ class TrafficLightController ():
                 if  [ 
 
                 """
-                pass
 if __name__ == "__main__":
     trafficController = TrafficLightController(3)
     trafficController.run()
